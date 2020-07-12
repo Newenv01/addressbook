@@ -19,9 +19,7 @@ node{
 
   stage('Sonar Analysis'){
      echo "Sonarqube Analysis"
-     withSonarQubeEvn('SonarServer'){
      sh "${mvnHome}/bin/mvn sonar:sonar"
-     }
   }
 }
 
