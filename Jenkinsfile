@@ -19,6 +19,7 @@ node{
 
   stage('Sonar Analysis'){
      echo "Sonarqube Analysis"
+     def mvnHome = tool name: 'maven-1', type: 'maven'
      sh "${mvnHome}/bin/mvn sonar:sonar"
   }
 }
