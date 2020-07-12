@@ -14,7 +14,7 @@ node{
    stage('Build'){
      echo "About to set variable"
      def mvnHome = tool name: 'maven-1', type: 'maven'
-     sh "${mvnHome}/bin/mvn package"
+     sh "${mvnHome}/bin/mvn clean package"
      }
 
   stage('Sonar Analysis'){
