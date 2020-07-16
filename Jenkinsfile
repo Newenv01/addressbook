@@ -1,3 +1,4 @@
+
 node{
   stage('SCM Checkout'){
      sh "rm -f /var/lib/jenkins/workspace/NewPip/*.*"
@@ -15,13 +16,12 @@ node{
      echo "About to set variable"
      def mvnHome = tool name: 'maven-1', type: 'maven'
      sh "${mvnHome}/bin/mvn clean package"
+     echo "tetsing"
      }
 
   stage('Sonar Analysis'){
      echo "Sonarqube Analysis"
-     withSonarQubeEvn('SonarServer'){
+     def mvnHome = tool name: 'maven-1', type: 'maven'
      sh "${mvnHome}/bin/mvn sonar:sonar"
-     }
   }
 }
-
