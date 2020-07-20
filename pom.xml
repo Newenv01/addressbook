@@ -74,7 +74,18 @@
          <id>maven-releases</id>
          <url>http://3.227.0.230:8081/repository/new-release</url>
        </repository>
+       <repository>
+         <id>central</id>
+         <name>ip-172-31-15-145.us-west-2.compute.internal-releases</name>
+         <url>http://35.160.213.141:8081/artifactory/Newenv_01</url>
+       </repository>
+       <snapshotRepository>
+         <id>snapshots</id>
+         <name>ip-172-31-15-145.us-west-2.compute.internal-snapshots</name>
+         <url>http://35.160.213.141:8081/artifactory/Newenv_01</url>
+       </snapshotRepository>
     </distributionManagement>
+
 
     <build>
         <plugins>
