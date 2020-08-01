@@ -73,12 +73,12 @@
        <repository>
          <id>central</id>
          <name>ip-172-31-15-145.us-west-2.compute.internal-releases</name>
-         <url>http://35.160.213.141:8081/artifactory/Newenv_01</url>
+         <url>http://34.219.106.166:8081/artifactory/Newenv_01</url>
        </repository>
        <snapshotRepository>
          <id>snapshots</id>
          <name>ip-172-31-15-145.us-west-2.compute.internal-snapshots</name>
-         <url>http://35.160.213.141:8081/artifactory/Newenv_01</url>
+         <url>http://34.219.106.166:8081/artifactory/Newenv_01</url>
        </snapshotRepository>
     </distributionManagement>
 
